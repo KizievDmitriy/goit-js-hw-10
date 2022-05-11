@@ -17,4 +17,44 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: none;
+  transition: 300ms ease border-color,300ms ease box-hadow;
+}
+
+#search-box:hover ,
+.country-info:hover {
+  border: 1px solid #20BCC6;
+  -webkit-box-shadow: 16px 12px 8px 0px rgba(32, 188, 198, 0.2);
+  -moz-box-shadow: 16px 12px 8px 0px rgba(32, 188, 198, 0.2);
+  box-shadow: 16px 12px 8px 0px rgba(32, 188, 198, 0.2);
+}
+
+#search-box:focus{
+  -webkit-box-shadow: 16px 12px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 16px 12px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 16px 12px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.country-list{
+  list-style: none;
+}
+
+.country-info{
+  width: max-content;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: none;
+} 
+
+.country-list li {
+  display: flex;
+  align-items: center;
+}
+
+.country-list p {
+  margin-left: 10px;
 }
