@@ -2,14 +2,11 @@ import './css/styles.css';
 import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchCountries } from './fetchCountries';
+import { getRefs } from './getRefs';
 
 const DEBOUNCE_DELAY = 300;
 
-const refs = {
-  inputCountry: document.querySelector('input#search-box'),
-  countryList: document.querySelector('.country-list'),
-  countryInfo: document.querySelector('.country-info'),
-};
+const refs = getRefs();
 
 refs.inputCountry.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
